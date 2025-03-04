@@ -3,7 +3,7 @@
   "builds": [
     { "src": "api.py", "use": "@vercel/python" }
   ],
-  "env": {
-    "FFMPEG_PATH": "/usr/bin/ffmpeg"
-  }
+  "routes": [
+    { "src": "/.*", "dest": "api.py" }
+  ]
 }
